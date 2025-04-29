@@ -1,57 +1,24 @@
-<div class="space-y-6 max-w-md mx-auto bg-[#fefdf4] p-6">
+<div class="grid gap-6 max-w-md mx-auto p-6">
   <!-- Navn -->
-  <div>
-    <label class="block text-gray-800 font-semibold mb-1">Navn</label>
-    <div
-      class="flex items-center gap-3 border border-orange-500 rounded-xl px-4 py-2"
-    >
-      <!-- Ikon: person -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 text-orange-500"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M5.121 17.804A9 9 0 0112 15a9 9 0 016.879 2.804M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-        ></path>
-      </svg>
+  <div class="grid gap-1">
+    <label class="font-semibold">Navn</label>
+    <div class="grid">
       <input
         type="text"
         placeholder="Navn"
-        class="flex-1 bg-transparent placeholder-[#ddd8bb] text-gray-800 focus:outline-none"
+        class="bg-transparent p-3 border-2 border-orange rounded-xl focus:outline-none"
       />
     </div>
   </div>
 
   <!-- Email -->
-  <div>
-    <label class="block text-gray-800 font-semibold mb-1">Email</label>
-    <div
-      class="items-center gap-3 border border-orange-500 rounded-xl px-4 py-2"
-    >
-      <!-- Ikon: mail -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 text-orange-500"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M16 12l-4-4-4 4m8 0l-4 4-4-4"></path>
-      </svg>
+  <div class="grid gap-1">
+    <label class="font-semibold">Email</label>
+    <div class="grid">
       <input
         type="email"
         placeholder="Email"
-        class="flex-1 bg-transparent placeholder-[#ddd8bb] text-gray-800 focus:outline-none"
+        class="bg-transparent p-3 border-2 border-orange rounded-xl focus:outline-none"
       />
     </div>
   </div>
