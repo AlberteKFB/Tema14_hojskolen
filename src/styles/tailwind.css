@@ -1,11 +1,10 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
-@plugin "daisyui"{
+@plugin "daisyui" {
   themes: wine;
 }
-
 
 @plugin "daisyui/theme" {
   name: "wine";
@@ -44,12 +43,12 @@
 
 @theme {
   /* Her tilføjes theme variable // tokens */
-  --color-orange: #ED6811;
-  --color-lightblue: #C2E2F9;
-  --color-beige: #FFFEF4;
-  --color-hoverblue: #EEF8FF;
-  --color-darkblue: #01395E;
-  --color-outline: #AC4400;
+  --color-orange: #ed6811;
+  --color-lightblue: #c2e2f9;
+  --color-beige: #fffef4;
+  --color-hoverblue: #eef8ff;
+  --color-darkblue: #01395e;
+  --color-outline: #ac4400;
 }
 
 @layer base {
@@ -60,11 +59,20 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  h2 {
+    @apply text-orange text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-darkblue text-3xl font-bold;
+  }
+  p {
+    @apply text-darkblue;
+  }
 }
 
-@layer components{
-
+@layer components {
 }
-@layer utilities{
-  
+@layer utilities {
 }
