@@ -44,7 +44,7 @@
 <div class="navbar bg-beige shadow-sm">
     <!-- Venstre side: Logo -->
     <div class="navbar-start">
-        <a href="/" class="btn btn-ghost text-xl">
+        <a href="/" class="text-xl hover:bg-transparent">
             <img src="/logo.png" alt="Logo" class="h-20 w-auto" />
         </a>
     </div>
@@ -53,7 +53,7 @@
     <div class="navbar-end">
         <!-- Burger menu: kun synlig på små skærme -->
         <div class="dropdown lg:hidden">
-            <div tabindex="0" role="button" class="btn btn-ghost">
+            <div tabindex="0" role="button" class="hover:bg-transparent">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
@@ -72,8 +72,13 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-beige rounded-box w-52 text-orange right-0"
             >
-                <li><a href="/hojskoleophold">OPHOLD</a></li>
-                <li><a href="/priser">PRISER</a></li>
+                <li>
+                    <a href="/hojskoleophold" class="hover:bg-transparent"
+                        >OPHOLD</a>
+                </li>
+                <li>
+                    <a href="/priser" class="hover:bg-transparent">PRISER</a>
+                </li>
                 <li>
                     <a
                         href="/tilmeld"
@@ -87,10 +92,12 @@
 
         <!-- Vandret menu: kun synlig på store skærme -->
         <ul
-            class="menu menu-horizontal px-1 hidden lg:flex text-orange hover:text-outline items-center space-x-4"
+            class="menu menu-horizontal px-1 hidden lg:flex text-orange hover:text-outline items-center space-x-4 hover:bg-transparent"
         >
-            <li><a href="/singleview">OPHOLD</a></li>
-            <li><a href="/priser">PRISER</a></li>
+            <li>
+                <a href="/singleview" class="hover:bg-transparent">OPHOLD</a>
+            </li>
+            <li><a href="/priser" class="hover:bg-transparent">PRISER</a></li>
             <li>
                 <a
                     href="/tilmeld"
