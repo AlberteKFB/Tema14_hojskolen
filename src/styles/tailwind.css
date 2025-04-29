@@ -68,7 +68,7 @@
     @apply text-darkblue text-3xl font-bold;
   }
   p {
-    @apply text-darkblue;
+    @apply text-xl text-darkblue;
   }
 }
 
