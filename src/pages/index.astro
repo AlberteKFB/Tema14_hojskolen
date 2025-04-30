@@ -11,6 +11,11 @@ import Scooter from "../assets/images/scooter.webp";
 import Bjerg from "../assets/images/bjerg.webp";
 import Vid from "../assets/images/vid.webp";
 import Swirl from "../assets/images/swirl.webp";
+import Vandfald from "../assets/images/wandfald.webp";
+import Foodmarked from "../assets/images/foodmarket.webp";
+import Scooter2 from "../assets/images/scooter2.webp";
+import Japan from "../assets/images/japan.webp";
+import Aussie from "../assets/images/aussie.webp";
 ---
 
 <MainLayout title="Højskolen.dk">
@@ -23,7 +28,7 @@ import Swirl from "../assets/images/swirl.webp";
       class="absolute inset-0 w-full h-full object-cover"
     />
     <div class="absolute inset-0 grid place-items-center text-white">
-      <h1 class="">HÖJSKOLENDK</h1>
+      <h1 class="brygada-bold">HÖJSKOLENDK</h1>
     </div>
   </div>
   <!-- Første sektion -->
@@ -32,8 +37,8 @@ import Swirl from "../assets/images/swirl.webp";
   >
     <!-- Venstre kolonne: tekst -->
     <div>
-      <h2 class="mb-6">ER DU KLAR TIL DIT LIVS EVENTYR?</h2>
-      <p class="text-darkblue mb-6">
+      <h2 class="mb-6 brygada-semibold">ER DU KLAR TIL DIT LIVS EVENTYR?</h2>
+      <p class="brygada-regular text-darkblue mb-6">
         <strong>HÖJSKOLENDK</strong> er en dansk højskole for unge i alderen ca.
         18-30 år. Vi brænder for oplevelser, fællesskab og mødet med nye mennesker
         og kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
@@ -69,8 +74,8 @@ import Swirl from "../assets/images/swirl.webp";
 
   <div class="grid place-items-center text-center px-4">
     <div>
-      <h2 class="mt-20 mb-4">RESERVER EN PLADS</h2>
-      <p>
+      <h2 class="mt-20 mb-4 brygada-semibold">RESERVER EN PLADS</h2>
+      <p class="brygada-regular">
         Vil du være først i køen til at få nyheder om nye ophold, med mulighed<br
         />
         for at tilmelde dig før andre? Så tilmeld dig her
@@ -83,11 +88,11 @@ import Swirl from "../assets/images/swirl.webp";
   <div
     class="relative grid place-items-center text-center px-4 py-20 overflow-hidden"
   >
-    <h2 class="mb-6 z-10">ANMELDELSER</h2>
+    <h2 class="mb-6 z-10 brygada-semibold">ANMELDELSER</h2>
 
     <!-- Citat sektion med baggrundsquote -->
     <div
-      class="relative grid place-items-center text-center px-4 py-20 overflow-hidden"
+      class="brygada-regular relative grid place-items-center text-center px-4 py-20 overflow-hidden"
     >
       <!-- Baggrundsquote (svg) -->
       <img
@@ -133,7 +138,7 @@ import Swirl from "../assets/images/swirl.webp";
   >
     <!-- Venstre kolonne: tekst -->
     <div>
-      <h2 class="mb-6 text-darkblue">REJSEHØJSKOLE</h2>
+      <h2 class="mb-6 text-darkblue brygada-semibold">REJSEHØJSKOLE</h2>
       <p class="text-darkblue mb-6">
         Der venter dig et unikt rejseeventyr når du tager på højskole i
         udlandet, med et stærkt sammenhold og fede rejseoplevelser. Med
@@ -184,7 +189,9 @@ import Swirl from "../assets/images/swirl.webp";
 
     <!-- Højre kolonne: tekst -->
     <div>
-      <h2 class="mb-6 text-darkblue">HØJSKOLE OPHOLD I UDLANDET</h2>
+      <h2 class="mb-6 text-darkblue brygada-semibold">
+        HØJSKOLE OPHOLD I UDLANDET
+      </h2>
       <p class="text-darkblue mb-6">
         Når du rejser på højskole i udlandet med <strong>HÖJSKOLENDK…</strong>
       </p>
@@ -302,6 +309,60 @@ import Swirl from "../assets/images/swirl.webp";
           <p class="text-orange">d. 13 november 2025 – kl. 17.00-19:00</p>
           <p class="text-orange">d. 21 januar 2026 – kl. 17.00-19:00</p>
         </div>
+      </div>
+    </div>
+  </section>
+  <!-- Galleri-->
+  <section class="relative grid place-items-center text-center overflow-hidden">
+    <h2 class="mb-6 z-10">MINDER FOR LIVET</h2>
+    <div class="carousel">
+      <div class="carousel-item">
+        <Image
+          id="scooter"
+          src={Scooter}
+          alt="Folk på scooter"
+          class="p-11 w-full max-w-md h-auto object-cover mx-auto"
+        />
+      </div>
+      <div class="carousel-item">
+        <Image
+          id="foodmarked"
+          src={Foodmarked}
+          alt="Folk på et marked"
+          class="p-11 w-full max-w-md h-auto object-cover mx-auto"
+        />
+      </div>
+      <div class="carousel-item">
+        <Image
+          id="wandfald"
+          src={Vandfald}
+          alt="Folk i vandfald"
+          class="p-11 w-full max-w-md h-auto object-cover mx-auto"
+        />
+      </div>
+      <div class="carousel-item">
+        <Image
+          id="japan"
+          src={Japan}
+          alt="Pige i Japan"
+          class="p-11 w-full max-w-md h-auto object-cover mx-auto"
+        />
+      </div>
+      <div class="carousel-item">
+        <Image
+          id="aussie"
+          src={Aussie}
+          alt="Australien"
+          class="p-11 w-full max-w-md h-auto object-cover mx-auto"
+        />
+      </div>
+      <div class="carousel-item">
+        <Image
+          id="scooter2"
+          src={Scooter2}
+          alt="Folk på scooter"
+          class="p-11 w-full max-w-md h-auto object-cover mx-auto"
+        />
       </div>
     </div>
   </section>
