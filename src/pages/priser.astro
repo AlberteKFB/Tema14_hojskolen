@@ -1,10 +1,28 @@
 ---
 import Card from "../components/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import Filtrering from "../components/Filtrering.astro";
 ---
 
 <MainLayout title="priser" />
 
+<section class="lg:flex flex-row-5 items-center justify-center lg:gap-13">
+  <div>
+    <Filtrering variant="primary" size="large">OVERBLIK</Filtrering>
+  </div>
+  <div>
+    <Filtrering variant="primary" size="large">PROGRAM</Filtrering>
+  </div>
+  <div>
+    <Filtrering variant="primary" size="large">INKLUDERET</Filtrering>
+  </div>
+  <div>
+    <Filtrering variant="primary" size="large">FAG</Filtrering>
+  </div>
+  <div>
+    <Filtrering variant="primary" size="large">KONTAKT</Filtrering>
+  </div>
+</section>
 <Card />
 
 <MainLayout
