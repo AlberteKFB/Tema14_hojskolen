@@ -42,63 +42,85 @@
     </div>
 </div> -->
 <div class="navbar bg-beige shadow-sm">
-  <!-- Venstre side: Logo -->
-  <div class="navbar-start">
-    <a href="/" class="btn btn-ghost text-xl">
-      <img src="/logo.png" alt="Logo" class="h-20 w-auto" />
-    </a>
-  </div>
-
-  <!-- Højre side: Burger menu (små skærme) og vandret menu (store skærme) -->
-  <div class="navbar-end">
-    <!-- Burger menu: kun synlig på små skærme -->
-    <div class="dropdown lg:hidden">
-      <div tabindex="0" role="button" class="btn btn-ghost">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="orange"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h8m-8 6h16"></path>
-        </svg>
-      </div>
-      <ul
-        tabindex="0"
-        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-beige rounded-box w-52 text-orange right-0"
-      >
-        <li><a href="/hojskoleophold">OPHOLD</a></li>
-        <li><a href="/priser">PRISER</a></li>
-        <li>
-          <a
-            href="/tilmeld"
-            class="bg-orange text-beige font-semibold px-4 py-2 rounded-xl stroke-outline transition"
-          >
-            TILMELD DIG
-          </a>
-        </li>
-      </ul>
+    <!-- Venstre side: Logo -->
+    <div class="navbar-start">
+        <a href="/" class="text-xl hover:bg-transparent">
+            <img src="/logo.png" alt="Logo" class="h-20 w-auto" />
+        </a>
     </div>
 
-    <!-- Vandret menu: kun synlig på store skærme -->
-    <ul
-      class="menu menu-horizontal px-1 hidden lg:flex text-orange hover:text-outline items-center space-x-4"
-    >
-      <li><a href="/singleview">OPHOLD</a></li>
-      <li><a href="/priser">PRISER</a></li>
-      <li>
-        <a
-          href="/tilmeld"
-          class="bg-orange text-beige font-semibold px-4 py-2 rounded-xl stroke-outline transition"
+    <!-- Højre side: Burger menu (små skærme) og vandret menu (store skærme) -->
+    <div class="navbar-end">
+        <!-- Burger menu: kun synlig på små skærme -->
+        <div class="dropdown lg:hidden">
+            <div tabindex="0" role="button" class="hover:bg-transparent">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="orange"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"></path>
+                </svg>
+            </div>
+            <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-beige rounded-box w-52 text-orange right-0"
+            >
+                <li>
+                    <a
+                        href="/hojskoleophold"
+                        class="hover:bg-transparent hover:text-outline"
+                        >OPHOLD</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/priser"
+                        class="hover:bg-transparent hover:text-outline"
+                        >PRISER</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/tilmeld"
+                        class="bg-orange text-beige font-semibold px-4 py-2 rounded-xl stroke-outline transition"
+                    >
+                        TILMELD DIG
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Vandret menu: kun synlig på store skærme -->
+        <ul
+            class="menu menu-horizontal px-1 hidden lg:flex text-orange items-center space-x-4 hover:bg-transparent"
         >
-          TILMELD DIG
-        </a>
-      </li>
-    </ul>
-  </div>
+            <li>
+                <a
+                    href="/singleview"
+                    class="hover:bg-transparent hover:text-outline">OPHOLD</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/priser"
+                    class="hover:bg-transparent hover:text-outline">PRISER</a
+                >
+            </li>
+            <li>
+                <a
+                    href="/tilmeld"
+                    class="bg-orange text-beige font-semibold px-4 py-2 rounded-xl stroke-outline transition"
+                >
+                    TILMELD DIG
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
