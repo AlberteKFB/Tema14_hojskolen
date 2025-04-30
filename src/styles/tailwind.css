@@ -6,6 +6,8 @@
   themes: wine;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
+
 @plugin "daisyui/theme" {
   name: "wine";
   default: false;
@@ -61,7 +63,7 @@
   }
 
   h2 {
-    @apply text-orange text-4xl font-bold;
+    @apply text-orange text-4xl;
   }
 
   h3 {
@@ -73,8 +75,45 @@
   p {
     @apply text-xl text-darkblue;
   }
-  li{
-    @apply text-xl ;
+  li {
+    @apply text-xl;
+  }
+
+  /* BRYGADA 1918 - Custom font classes */
+  .brygada-regular {
+    font-family: "Brygada 1918", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .brygada-medium {
+    font-family: "Brygada 1918", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .brygada-semibold {
+    font-family: "Brygada 1918", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .brygada-bold {
+    font-family: "Brygada 1918", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .brygada-italic {
+    font-family: "Brygada 1918", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .brygada-bolditalic {
+    font-family: "Brygada 1918", serif;
+    font-weight: 700;
+    font-style: italic;
   }
 }
 
