@@ -1,0 +1,46 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+// import Heading from "../components/Heading.astro";
+---
+
+<!-- start på buttons -->
+<section class="container mx-auto m-sectiontop px-4">
+    <!-- <Heading htmlheading="h2" size="large" stylingclasses="m-sectionheading"
+        >Buttons</Heading -->
+
+    <p><Button>Default knap</Button></p>
+    <p><Button variant="primary">Variant primary</Button></p>
+    <p>
+        <Button variant="primary" size="small"
+            >Variant primary size small</Button
+        >
+    </p>
+    <p>
+        <Button variant="primary" size="medium"
+            >Variant primary size medium</Button
+        >
+    </p>
+    <p>
+        <Button variant="primary" size="large"
+            >Variant primary size large</Button
+        >
+    </p>
+    <p>
+        <Button variant="secondary" size="small"
+            >Variant secondary size small</Button
+        >
+    </p>
+    <p>
+        <Button variant="secondary" size="medium"
+            >Variant secondary size medium</Button
+        >
+    </p>
+    <p>
+        <Button variant="secondary" size="large"
+            >Variant secondary size large</Button
+        >
+    </p>
+    <hr class="mt-20 border-accent" />
+</section>
