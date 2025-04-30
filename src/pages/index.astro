@@ -8,6 +8,8 @@ import thumbsup from "../assets/images/thumbsup.png";
 import Hero from "../assets/images/forsidebille.webp";
 import Surf from "../assets/images/Surf.webp";
 import Scooter from "../assets/images/scooter.webp";
+import Bjerg from "../assets/images/bjerg.webp";
+import Vid from "../assets/images/vid.webp";
 ---
 
 <MainLayout title="Højskolen.dk">
@@ -124,7 +126,7 @@ import Scooter from "../assets/images/scooter.webp";
   >
     <!-- Venstre kolonne: tekst -->
     <div>
-      <h2 class="mb-6">REJSEHØJSKOLE</h2>
+      <h2 class="mb-6 text-darkblue">REJSEHØJSKOLE</h2>
       <p class="text-darkblue mb-6">
         Der venter dig et unikt rejseeventyr når du tager på højskole i
         udlandet, med et stærkt sammenhold og fede rejseoplevelser. Med
@@ -155,7 +157,71 @@ import Scooter from "../assets/images/scooter.webp";
       <Image
         id="scooter"
         src={Scooter}
-        alt="Drenge der surfer"
+        alt="Folk på en scooter"
+        class="w-full max-w-md h-auto object-cover mx-auto"
+      />
+    </div>
+  </div>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 items-center gap-6 max-w-7xl mx-auto px-4 py-12"
+  >
+    <!-- Venstre kolonne: billede -->
+    <div>
+      <Image
+        id="vid"
+        src={Vid}
+        alt="fake video "
+        class="w-full max-w-md h-auto object-cover mx-auto"
+      />
+    </div>
+
+    <!-- Højre kolonne: tekst -->
+    <div>
+      <h2 class="mb-6 text-darkblue">HØJSKOLE OPHOLD I UDLANDET</h2>
+      <p class="text-darkblue mb-6">
+        Når du rejser på højskole i udlandet med <strong>HÖJSKOLENDK…</strong>
+      </p>
+      <ul class="list-disc list-inside text-darkblue mb-6">
+        <li>
+          bliver du en del af et fantastisk fællesskab med et stærkt sammenhold
+        </li>
+        <li>
+          får du masser af vilde naturoplevelser, adventure og spændende
+          kulturmøder
+        </li>
+        <li>
+          opdager du nye og stærke sider af dig selv, flytter grænser og får
+          mere selvtillid
+        </li>
+        <li>
+          rejser du altid med danske passionerede rejseledere og engagerede
+          undervisere
+        </li>
+        <li>får du et uforglemmeligt, unikt og trygt rejseeventyr for live</li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 items-center gap-6 max-w-7xl mx-auto px-4 py-12"
+  >
+    <!-- Venstre kolonne: tekst -->
+    <div>
+      <p class="text-darkblue mb-6">
+        Med vores unikke kombination af højskole, grupperejser, rejseeventyr,
+        frihed, kulturmøder og spændende undervisning, vil vi inspirere dig til
+        at finde ind til hvad der er vigtigst for dig i livet – hvad du
+        virkeligt brænder for og kan mærke er meningsfuldt – så du kan forfølge
+        dine drømme. Gå på opdagelse her på siden efter dit livs eventyr – på
+        højskole i udlandet med HÖJSKOLENDK. Velkommen!
+      </p>
+    </div>
+
+    <!-- Højre kolonne: billede -->
+    <div>
+      <Image
+        id="bjerg"
+        src={Bjerg}
+        alt="Folk på et bjerg"
         class="w-full max-w-md h-auto object-cover mx-auto"
       />
     </div>
