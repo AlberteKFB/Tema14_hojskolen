@@ -1,35 +1,46 @@
 <div class="grid gap-6 max-w-md mx-auto p-6">
   <!-- Navn -->
   <div class="grid gap-1">
-    <label class="font-semibold">Navn</label>
-    <div class="grid">
+    <label class="font-semibold text-darkblue">Navn</label>
+    <div class="grid grid-cols-[40px_1fr] items-center gap-2">
+      <img
+        src="/navn.svg"
+        alt="person ikon"
+        class="w-6 h-6 text-orange justify-self-end"
+      />
       <input
         type="text"
         placeholder="Navn"
-        class="bg-transparent p-3 border-2 border-orange rounded-xl focus:outline-none"
+        class="bg-transparent p-3 border-2 border-orange rounded-xl w-full focus:outline-none text-orange placeholder:text-orange/50"
       />
     </div>
   </div>
 
   <!-- Email -->
   <div class="grid gap-1">
-    <label class="font-semibold">Email</label>
-    <div class="grid">
+    <label class="font-semibold text-darkblue">Email</label>
+    <div class="grid grid-cols-[40px_1fr] items-center gap-2">
+      <img
+        src="/mail.svg"
+        alt="mail ikon"
+        class="w-6 h-6 text-orange justify-self-end"
+      />
       <input
         type="email"
         placeholder="Email"
-        class="bg-transparent p-3 border-2 border-orange rounded-xl focus:outline-none"
+        class="bg-transparent p-3 border-2 border-orange rounded-xl w-full focus:outline-none text-orange placeholder:text-orange/50"
       />
     </div>
   </div>
-  <div>
-    <div class="grid place-items-center">
-      <a
-        href="/tilmeld"
-        class="bg-lightblue border-2 border-darkblue text-darkblue font-semibold px-4 py-2 rounded-xl stroke-outline transition"
-      >
-        TILMELD DIG
-      </a>
-    </div>
-  </div>
+</div>
+
+<!-- Blå knap -->
+
+<div class="grid place-items-center">
+  <a
+    href="/tilmeld"
+    class="bg-lightblue border-2 border-darkblue text-darkblue font-semibold px-4 py-2 rounded-xl stroke-outline transition"
+  >
+    TILMELD DIG
+  </a>
 </div>
