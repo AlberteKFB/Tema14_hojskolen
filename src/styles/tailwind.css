@@ -6,6 +6,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
 
+@font-face {
+  font-family: "Blue Ocean";
+  src: url("/assets/font/BlueOcean-DOnv1.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 @theme {
   /* Her tilføjes theme variable // tokens */
   --color-orange: #ed6811;
