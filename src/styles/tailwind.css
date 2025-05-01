@@ -2,46 +2,10 @@
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
-@plugin "daisyui" {
-  themes: wine;
-}
+@plugin "daisyui";
 
 @import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
 
-@plugin "daisyui/theme" {
-  name: "wine";
-  default: false;
-  prefersdark: false;
-  color-scheme: "light";
-  --color-base-100: oklch(98% 0.001 106.423);
-  --color-base-200: oklch(70% 0.01 56.259);
-  --color-base-300: oklch(92% 0.003 48.717);
-  --color-base-content: oklch(44% 0.119 151.328);
-  --color-primary: oklch(28% 0.066 53.813);
-  --color-primary-content: oklch(98% 0.001 106.423);
-  --color-secondary: oklch(45% 0.124 130.933);
-  --color-secondary-content: oklch(100% 0 0);
-  --color-accent: oklch(77% 0.152 181.912);
-  --color-accent-content: oklch(27% 0.046 192.524);
-  --color-neutral: oklch(44% 0.011 73.639);
-  --color-neutral-content: oklch(98% 0.001 106.423);
-  --color-info: oklch(68% 0.169 237.323);
-  --color-info-content: oklch(97% 0.013 236.62);
-  --color-success: oklch(69% 0.17 162.48);
-  --color-success-content: oklch(97% 0.021 166.113);
-  --color-warning: oklch(70% 0.213 47.604);
-  --color-warning-content: oklch(98% 0.016 73.684);
-  --color-error: oklch(64% 0.246 16.439);
-  --color-error-content: oklch(96% 0.015 12.422);
-  --radius-selector: 0.25rem;
-  --radius-field: 0.5rem;
-  --radius-box: 1rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 0;
-  --noise: 0;
-}
 
 @theme {
   /* Her tilføjes theme variable // tokens */
@@ -53,6 +17,7 @@
   --color-outline: #ac4400;
 }
 
+
 @layer base {
   *,
   ::after,
@@ -62,22 +27,7 @@
     border-color: var(--color-gray-200, currentColor);
   }
 
-  h2 {
-    @apply text-orange text-4xl;
-  }
 
-  h3 {
-    @apply text-darkblue text-3xl font-bold;
-  }
-  h4 {
-    @apply text-xl text-darkblue  font-bold;
-  }
-  p {
-    @apply text-xl text-darkblue;
-  }
-  li {
-    @apply text-xl;
-  }
 
   /* BRYGADA 1918 - Custom font classes */
   .brygada-regular {
@@ -114,6 +64,23 @@
     font-family: "Brygada 1918", serif;
     font-weight: 700;
     font-style: italic;
+  }
+ 
+  h2 {
+    @apply text-orange text-4xl;
+  }
+
+  h3 {
+    @apply text-darkblue text-3xl font-bold;
+  }
+  h4 {
+    @apply text-xl text-darkblue  font-bold;
+  }
+  p {
+    @apply text-xl text-darkblue;
+  }
+  li {
+    @apply text-xl;
   }
 }
 
