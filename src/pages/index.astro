@@ -16,6 +16,8 @@ import Foodmarked from "../assets/images/foodmarket.webp";
 import Scooter2 from "../assets/images/scooter2.webp";
 import Japan from "../assets/images/japan.webp";
 import Aussie from "../assets/images/aussie.webp";
+import Card from "../components/Card.astro";
+import Filtrering from "../components/Filtrering.astro";
 ---
 
 <MainLayout title="Højskolen.dk">
@@ -272,6 +274,27 @@ import Aussie from "../assets/images/aussie.webp";
       </div>
     </div>
   </section>
+
+  <!-- Vælg ophold -->
+
+  <section class="lg:flex flex-row-5 items-center justify-center lg:gap-13">
+    <div>
+      <Filtrering variant="primary" size="large">OVERBLIK</Filtrering>
+    </div>
+    <div>
+      <Filtrering variant="primary" size="large">PROGRAM</Filtrering>
+    </div>
+    <div>
+      <Filtrering variant="primary" size="large">INKLUDERET</Filtrering>
+    </div>
+    <div>
+      <Filtrering variant="primary" size="large">FAG</Filtrering>
+    </div>
+    <div>
+      <Filtrering variant="primary" size="large">KONTAKT</Filtrering>
+    </div>
+  </section>
+  <Card />
   <!-- infomøde section -->
   <section class="container mx-auto px-4 py-12">
     <div
