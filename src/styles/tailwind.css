@@ -6,7 +6,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
 
-
 @theme {
   /* Her tilføjes theme variable // tokens */
   --color-orange: #ed6811;
@@ -17,7 +16,6 @@
   --color-outline: #ac4400;
 }
 
-
 @layer base {
   *,
   ::after,
@@ -26,8 +24,6 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
-
-
 
   /* BRYGADA 1918 - Custom font classes */
   .brygada-regular {
@@ -65,22 +61,32 @@
     font-weight: 700;
     font-style: italic;
   }
- 
+
   h2 {
     @apply text-orange text-4xl;
+    font-family: "Brygada 1918", serif;
+    font-weight: 700;
   }
 
   h3 {
     @apply text-darkblue text-3xl font-bold;
+    font-family: "Brygada 1918", serif;
+    font-weight: 700;
   }
+
   h4 {
-    @apply text-xl text-darkblue  font-bold;
+    @apply text-xl text-darkblue font-bold;
+    font-family: "Brygada 1918", serif;
+    font-weight: 700;
   }
   p {
     @apply text-xl text-darkblue;
+    font-family: "Brygada 1918", serif;
   }
+
   li {
     @apply text-xl;
+    font-family: "Brygada 1918", serif;
   }
 }
 
