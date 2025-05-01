@@ -85,24 +85,19 @@ import Aussie from "../assets/images/aussie.webp";
   <Form />
 
   <!-- Citat sektion -->
-  <div
-    class="relative grid place-items-center text-center px-4 py-20 overflow-hidden"
-  >
+  <div class="relative w-full h-auto grid place-items-center text-center">
     <h2 class="mb-6 z-10 brygada-semibold">ANMELDELSER</h2>
 
-    <!-- Citat sektion med baggrundsquote -->
     <div
       class="brygada-regular relative grid place-items-center text-center px-4 py-20 overflow-hidden"
     >
       <!-- Baggrundsquote (svg) -->
-      <img
-        src="/quote.svg"
-        alt="quote tegn"
-        class="absolute inset-0 m-auto w-32 sm:w-40 md:w-52 opacity-10 z-0 pointer-events-none"
-      />
+      <img src="/quote.svg" alt="quote tegn" class="relative" />
 
       <!-- Citat indhold -->
-      <div class="carousel w-full max-w-2xl z-10 relative">
+      <div
+        class="carousel w-full max-w-2xl absolute inset-0 flex items-center justify-center"
+      >
         <div
           id="slide1"
           class="carousel-item w-full flex flex-col items-center"
