@@ -31,7 +31,7 @@ import "../styles/tailwind.css";
     <div class="relative w-full h-[100vh]">
       <Image id="Hero" src={Hero} alt="Højskole i udlandet" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 grid place-items-center text-white">
-        <h1 class="mt-10 text-orange font-blueocean text-9xl">HÖJSKOLENDK</h1>
+        <h1 class="lg:mt-10 -mt-10 text-orange font-blueocean lg:text-9xl text-6xl">HÖJSKOLENDK</h1>
         <a href="/komponentbibliotek">komponentbibliotek</a>
       </div>
     </div>
@@ -58,7 +58,7 @@ import "../styles/tailwind.css";
         <Button variant="primary">TILMELD DIG</Button>
       </div>
       <div>
-        <Image src={Streg3} alt="streg" class="w-100 h-auto -z-10 lg:-ml-45 ml-50" />
+        <Image src={Streg3} alt="streg" class="w-100 h-auto -z-10 lg:-ml-45 ml-25" />
       </div>
     </div>
 
@@ -80,7 +80,7 @@ import "../styles/tailwind.css";
     </div>
     <Form />
     <div>
-      <Image src={Streg} alt="streg" class="w-200 h-auto -z-10 -ml-45" />
+      <Image src={Streg} alt="streg" class="w-200 h-auto -z-10 lg:-ml-45" />
     </div>
   </div>
 
@@ -92,26 +92,27 @@ import "../styles/tailwind.css";
       <!-- Baggrundsquote (svg) -->
       <img src="/quote.svg" alt="quote tegn" class="mx-auto h-120 relative" />
 
-      <div>
-        <Image src={Streg3} alt="streg" class="w-120 h-auto -z-10 ml-220" />
-      </div>
-
-      <!-- Citat indhold -->
-      <div class="relative w-full max-w-4xl mx-auto h-64 flex items-center justify-center text-center px-4">
-        <div class="carousel w-full absolute inset-0 flex items-center justify-center">
+      <div class="relative w-full max-w-4xl mx-auto h-64 flex items-center justify-content text-center px-4 -mt-65">
+        <div class="carousel w-full absolute inset-0 flex items-center">
           <!-- Slide 1 -->
-          <div id="slide1" class="carousel-item w-full flex flex-col items-center justify-center px-4">
-            <h4 class="text-xl md:text-2xl font-semibold text-white max-w-3xl">"Min rejse med HÖJSKOLENDK er den bedste beslutning jeg nogensinde har taget!"</h4>
-            <p class="mt-4 text-white text-base font-medium">– Anna D. Mikkelsen</p>
+          <div id="slide1" class="carousel-item w-full flex flex-col items-center px-4 brygada-regular">
+            <h4 class="text-xl md:text-2xl font-light text-darkblue max-w-3xl">"Min rejse med HÖJSKOLENDK er den bedste beslutning jeg nogensinde har taget!"</h4>
+            <p class="mt-4 text-darkblue text-base font-light">– Anna D. Mikkelsen</p>
           </div>
 
-          <!-- Slide 2 -->
-          <div id="slide2" class="carousel-item w-full flex flex-col items-center justify-center px-4">
-            <h4 class="text-xl md:text-2xl font-semibold text-white max-w-3xl">"Jeg har fået venner for livet og lært mere end jeg kunne forestille mig!"</h4>
-            <p class="mt-4 text-white text-base font-medium">– Frederik L. Hansen</p>
+          <!-- slide 2 -->
+          <div id="slide2" class="carousel-item w-full flex flex-col items-center px-4">
+            <h4 class="text-xl md:text-2xl font-light text-darkblue max-w-3xl">"Jeg har fået venner for livet og lært mere end jeg kunne forestille mig!"</h4>
+            <p class="mt-4 text-darkblue text-base font-light">– Frederik L. Hansen</p>
           </div>
+
+          <!-- Citat indhold -->
         </div>
       </div>
+    </div>
+
+    <div>
+      <Image src={Streg3} alt="streg" class="w-100 h-auto -z-10 lg:ml-120" />
     </div>
   </div>
 
@@ -141,7 +142,7 @@ import "../styles/tailwind.css";
         <Image id="scooter" src={Scooter} alt="Folk på en scooter" class="w-full max-w-md h-auto object-cover mx-auto" />
       </div>
       <div>
-        <Image src={Streg2} alt="streg" class="w-150 h-auto -z-10 ml-210" />
+        <Image src={Streg2} alt="streg" class="w-100 h-auto -z-10 lg:ml-210 ml-30" />
       </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6 max-w-7xl mx-auto">
@@ -249,7 +250,7 @@ import "../styles/tailwind.css";
     </section>
 
     <div>
-      <Image src={Streg4} alt="streg" class="w-100 h-auto -z-10 ml-250" />
+      <Image src={Streg4} alt="streg" class="w-100 h-auto -z-10 lg:ml-250" />
     </div>
 
     <!-- infomøde section -->
