@@ -22,6 +22,7 @@ import Streg from "../assets/images/streg.svg";
 import Streg2 from "../assets/images/streg2.svg";
 import Streg3 from "../assets/images/streg3.svg";
 import Streg4 from "../assets/images/streg4.svg";
+import "../styles/tailwind.css";
 ---
 
 <MainLayout title="Højskolen.dk">
@@ -35,7 +36,7 @@ import Streg4 from "../assets/images/streg4.svg";
         class="absolute inset-0 w-full h-full object-cover"
       />
       <div class="absolute inset-0 grid place-items-center text-white">
-        <h1 class="brygada-bold">HÖJSKOLENDK</h1>
+        <h1 class="text-orange font-blueocean text-9xl">HÖJSKOLENDK</h1>
         <a href="/komponentbibliotek">komponentbibliotek</a>
       </div>
     </div>
@@ -101,54 +102,50 @@ import Streg4 from "../assets/images/streg4.svg";
   </div>
 
   <!-- Citat sektion -->
-  <div class="relative w-full h-auto grid place-items-center text-center">
+  <div class="relative w-full grid place-items-center text-center">
     <h2 class="mb-6 z-10 brygada-semibold">ANMELDELSER</h2>
 
-    <div class="relative grid place-items-center text-center">
-      <!-- Baggrundsquote (svg) -->
-      <img src="/quote.svg" alt="quote tegn" class="mx-auto h-32 relative" />
-
-      <div>
-        <Image src={Streg3} alt="streg" class="w-120 h-auto -z-10 ml-220" />
-      </div>
+    <div
+      class="relative w-full max-w-4xl mx-auto h-72 flex items-center justify-center px-4"
+    >
+      <!-- Baggrundsquote -->
+      <img
+        src="/quote.svg"
+        alt="quote tegn"
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20 z-0 w-64 md:w-96 pointer-events-none"
+      />
 
       <!-- Citat indhold -->
-      <div
-        class="relative w-full max-w-4xl mx-auto h-64 flex items-center justify-center text-center px-4"
-      >
-        <div class="carousel w-full">
-          <!-- Slide 1 -->
-          <div
-            id="slide1"
-            class="carousel-item relative w-full flex flex-col items-center justify-center"
-          >
-            <h4 class="text-xl md:text-2xl font-semibold text-orange max-w-3xl">
-              "Min rejse med HÖJSKOLENDK er den bedste beslutning jeg nogensinde
-              har taget!"
-            </h4>
-            <p class="mt-4 text-base font-medium">– Anna D. Mikkelsen</p>
-            <div class="absolute left-5 right-5 bottom-0 flex justify-between">
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
-            </div>
+      <div class="carousel w-full z-10">
+        <!-- Slide 1 -->
+        <div
+          id="slide1"
+          class="carousel-item relative w-full flex flex-col items-center justify-center"
+        >
+          <h4 class="text-xl md:text-2xl font-semibold text-orange max-w-3xl">
+            "Min rejse med HÖJSKOLENDK er den bedste beslutning jeg nogensinde
+            har taget!"
+          </h4>
+          <p class="mt-4 text-base font-medium">– Anna D. Mikkelsen</p>
+          <div class="absolute left-5 right-5 bottom-0 flex justify-between">
+            <a href="#slide2" class="text-orange">❮</a>
+            <a href="#slide2" class="text-orange">❯</a>
           </div>
+        </div>
 
-          <!-- Slide 2 -->
-          <div
-            id="slide2"
-            class="carousel-item relative w-full flex flex-col items-center justify-center"
-          >
-            <h4 class="text-xl md:text-2xl font-semibold text-orange max-w-3xl">
-              "Jeg har fået venner for livet og lært mere end jeg kunne
-              forestille mig!"
-            </h4>
-            <p class="mt-4 text-base font-medium">– Frederik L. Hansen</p>
-            <div
-              class="text-orange absolute left-5 right-5 bottom-0 flex justify-between"
-            >
-              <a href="#slide1" class="text-orange">❮</a>
-              <a href="#slide1" class="text-orange">❯</a>
-            </div>
+        <!-- Slide 2 -->
+        <div
+          id="slide2"
+          class="carousel-item relative w-full flex flex-col items-center justify-center"
+        >
+          <h4 class="text-xl md:text-2xl font-semibold text-orange max-w-3xl">
+            "Jeg har fået venner for livet og lært mere end jeg kunne forestille
+            mig!"
+          </h4>
+          <p class="mt-4 text-base font-medium">– Frederik L. Hansen</p>
+          <div class="absolute left-5 right-5 bottom-0 flex justify-between">
+            <a href="#slide1" class="text-orange">❮</a>
+            <a href="#slide1" class="text-orange">❯</a>
           </div>
         </div>
       </div>
@@ -679,9 +676,12 @@ import Streg4 from "../assets/images/streg4.svg";
                     leoparder, elefanter og bjørne. Alle vores rejser er fyldt
                     med storslåede oplevelser, som du aldrig vil glemme.
                   </p>
-                  id="bjerg" src={Bjerg}
-                  alt="Folk på et bjerg" class="w-full max-w-md h-auto object-cover
-                  mx-auto" />
+                  <Image
+                    id="scooter"
+                    src={Scooter}
+                    alt="Folk på scooter"
+                    class="p-11 w-full max-w-md h-auto object-cover mx-auto"
+                  />
                 </div>
               </div>
               <!-- Tre kolonner med infografik og tekst -->
