@@ -22,6 +22,7 @@ import Streg from "../assets/images/streg.svg";
 import Streg2 from "../assets/images/streg2.svg";
 import Streg3 from "../assets/images/streg3.svg";
 import Streg4 from "../assets/images/streg4.svg";
+import "../styles/tailwind.css";
 ---
 
 <MainLayout title="Højskolen.dk">
@@ -30,7 +31,7 @@ import Streg4 from "../assets/images/streg4.svg";
     <div class="relative w-full h-[100vh]">
       <Image id="Hero" src={Hero} alt="Højskole i udlandet" class="absolute inset-0 w-full h-full object-cover" />
       <div class="absolute inset-0 grid place-items-center text-white">
-        <h1 class="brygada-bold">HÖJSKOLENDK</h1>
+        <h1 class="mt-10 text-orange font-blueocean text-9xl">HÖJSKOLENDK</h1>
         <a href="/komponentbibliotek">komponentbibliotek</a>
       </div>
     </div>
@@ -84,12 +85,12 @@ import Streg4 from "../assets/images/streg4.svg";
   </div>
 
   <!-- Citat sektion -->
-  <div class="relative w-full h-auto grid place-items-center text-center">
+  <div class="relative w-full grid place-items-center text-center">
     <h2 class="mb-6 z-10 brygada-semibold">ANMELDELSER</h2>
 
     <div class="relative grid place-items-center text-center">
       <!-- Baggrundsquote (svg) -->
-      <img src="/quote.svg" alt="quote tegn" class="mx-auto h-120 relative -z-10" />
+      <img src="/quote.svg" alt="quote tegn" class="mx-auto h-120 relative" />
 
       <div>
         <Image src={Streg3} alt="streg" class="w-120 h-auto -z-10 ml-220" />
@@ -113,6 +114,7 @@ import Streg4 from "../assets/images/streg4.svg";
       </div>
     </div>
   </div>
+
   <!-- billede/tekst sektion -->
   <section class="mb-20 px-4 py-12">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-6 max-w-7xl mx-auto">
@@ -212,7 +214,6 @@ import Streg4 from "../assets/images/streg4.svg";
         </div>
 
         <p class="text-darkblue">2.500+ glade og skønne elever.</p>
-        =======
 
         <!-- Navigationspile -->
         <div class="absolute inset-0 flex justify-between items-center px-10 z-20">
